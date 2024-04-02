@@ -1,13 +1,16 @@
-<?php
-$titulo="AMOR";
-?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?php echo $titulo;?></title>
+    <title>Amor</title>
+    <script>
+        // Función para generar un número aleatorio entre 0 y 100 y mostrarlo en la página
+        window.onload = function() {
+            var numero = Math.floor(Math.random() * 101); // Genera un número aleatorio entre 0 y 100
+            document.getElementById("Amor").innerHTML = numero; // Muestra el número en el elemento con id "numeroAleatorio"
+        };
+    </script>
 </head>
 <body>
-	<h1>$numero = rand(0, 100);
-	echo $numero;</h1>
+    <p id="Amor"></p>
 </body>
 </html>
